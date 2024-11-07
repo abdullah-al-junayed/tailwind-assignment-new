@@ -1,284 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="images/for favicon.png" type="image/x-icon">
-    
+<html lang="en" class="dark" id="htmlTag">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="images/for favicon.png"
+      type="image/x-icon"
+    />
+
     <title>Creatives For You</title>
-</head>
-<body class=" bg-[#FAFAFA] overflow-x-hidden">
+  </head>
+  <body class="bg-[#FAFAFA] overflow-x-hidden dark:bg-gray-900">
     <!-- header section -->
- <header>
-    <nav class="overflow-x-hidden  bg-white py-5">
+    <header>
+      <nav class="overflow-x-hidden bg-white py-5 dark:bg-gray-900 w-full  fixed z-50">
         <div class="container mx-auto flex items-center justify-between">
-            <div >
-                <img class="cursor-pointer hover:scale-110 hover:transition" src="images/c4u full logo_2022 1.png" alt="">
-            </div>
-            <div >
-                <ul class="gap-4 text-[#072125] font-semibold cursor-pointer hidden md:block md:flex">
-                    <li class="hover:scale-105 transition-all">Home</li>
-                    <li class="hover:scale-105 transition-all">About Us</li>
-                    <li class="hover:scale-105 transition-all text-[#F44335]">Upskill</li>
-                    <li class="hover:scale-105 transition-all">Contact us</li>
-                </ul>
-            </div>
-            <div class="flex gap-5 ">
-                <button class="hover:scale-105 transition-all bg-[#F44335] text-white px-3 rounded-[8px] font-light">Register Interest</button>
-                <img class="hover:scale-110 transition-all cursor-pointer" src="images/moon.png" alt="">
-            </div>
-        </div>
-    </nav>
- </header>
-
-<!-- hero section -->
-
-<section >
-    <section class=" grid grid-cols-12 container mx-auto text-center lg:text-left">
-      <div class="col-span-12 lg:col-span-6">
-        <h2 class="font-semibold mt-16">Discover <span>-</span> Interact <span>-</span> Engage</h2>
-         
-        <h1 class="mt-3  font-bold text-[60px] font-arial">Google <br> 
-           <span class="underline underline-offset-[15px]">IT Support </span> <br> Certificate</h1>
-
-           <p class="mt-9 font-semibold text-[17px]">This is your path to a career in IT. In this program, you’ll learn in- <br class="hidden lg:block">demand skills with no degree or experience required. </p>
-
-           <div>
-            <ul class="flex flex-wrap md:flex-nowrap gap-9 mt-9 justify-center lg:justify-start  font-medium text-center text-[#2D3142] text-[18px]">
-                <li class="listdesign"><span class="text-[#00FF84] font-semibold">438</span> <br>Videos </li>
-                <li class="listdesign"><span class="text-[#00FF84] font-semibold">151</span> <br>Reading </li>
-                <li class="listdesign"><span class="text-[#00FF84] font-semibold">108</span> <br>Quizzes </li>
-                <li class="listdesign"><span class="text-[#00FF84] font-semibold">24</span> <br>Exercises </li>
-                <li class="listdesign"><span class="text-[#00FF84] font-semibold">4</span> <br>Assignment </li>
+          <div>
+            <img
+              class="cursor-pointer hover:scale-110 hover:transition"
+              src="images/c4u full logo_2022 1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <ul
+              class="gap-4 text-[#072125] font-semibold cursor-pointer hidden md:block md:flex dark:text-white"
+            >
+              <li class="hover:scale-105 transition-all">Home</li>
+              <li class="hover:scale-105 transition-all">About Us</li>
+              <li class="hover:scale-105 transition-all text-[#F44335]">
+                Upskill
+              </li>
+              <li class="hover:scale-105 transition-all">Contact us</li>
             </ul>
-           </div>
+          </div>
+          <div class="flex gap-5">
+            <button
+              class="hover:scale-105 transition-all bg-[#F44335] text-white px-3 rounded-[8px] font-light"
+            >
+              Register Interest
+            </button>
+            <button id="switch">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10 dark:stroke-white hover:scale-110 transition-all cursor-pointer"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-           <div class="mt-9 flex justify-center lg:justify-start gap-5 mb-5">
+    <!-- hero section -->
+
+    <section>
+      <section
+        class="grid grid-cols-12 container mx-auto text-center bg-transparent backdrop-blur-10 dark:bg-gray-900 lg:text-left dark:text-white"
+      >
+        <div class="col-span-12 lg:col-span-6">
+          <h2 class="font-semibold mt-[150px]">
+            Discover <span>-</span> Interact <span>-</span> Engage
+          </h2>
+
+          <h1 class="mt-3 font-bold text-[60px] font-arial">
+            Google <br />
+            <span class="underline underline-offset-[15px]">IT Support </span>
+            <br />
+            Certificate
+          </h1>
+
+          <p class="mt-9 font-semibold text-[17px]">
+            This is your path to a career in IT. In this program, you’ll learn
+            in- <br class="hidden lg:block" />demand skills with no degree or
+            experience required.
+          </p>
+
+          <div>
+            <ul
+              class="flex flex-wrap md:flex-nowrap gap-9 mt-9 justify-center lg:justify-start font-medium text-center text-[#2D3142] text-[18px] dark:text-white"
+            >
+              <li class="listdesign">
+                <span class="text-[#00FF84] font-semibold">438</span>
+                <br />Videos
+              </li>
+              <li class="listdesign">
+                <span class="text-[#00FF84] font-semibold">151</span>
+                <br />Reading
+              </li>
+              <li class="listdesign">
+                <span class="text-[#00FF84] font-semibold">108</span>
+                <br />Quizzes
+              </li>
+              <li class="listdesign">
+                <span class="text-[#00FF84] font-semibold">24</span>
+                <br />Exercises
+              </li>
+              <li class="listdesign">
+                <span class="text-[#00FF84] font-semibold">4</span>
+                <br />Assignment
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-9 flex justify-center lg:justify-start gap-5 mb-5">
             <button class="btn">Sign up</button>
             <button class="whitebtn">Learn more</button>
-           </div>
+          </div>
+        </div>
 
-      </div>
-   
+        <div
+          class="col-span-12 lg:col-span-6 mt-12 mb-6 flex justify-center lg:justify-end mt-[100px]"
+        >
+          <img src="images/Group 1964.png" alt="" />
+        </div>
+      </section>
+    </section>
 
+    <!-- google section -->
 
-    <div class="col-span-12 lg:col-span-6 mt-12 mb-6 flex justify-center lg:justify-end">
-        <img src="images/Group 1964.png" alt="">
-    </div>
-</section>
-</section>
-
-<!-- google section -->
-
-<section class=" mt-10 mb-10 bg-white w-full py-6"> 
-    <div class="container mx-auto" >
-        <ul class="flex flex-col xl:flex-row items-center justify-center gap-0 lg:gap-[150px] md:gap-[0px]">
-            <li class="textdesign">Pave your path to career success by <br class="xl:block hidden">gaining  a  professional  Google <br class="xl::block hidden">certificate with the support of C4U</li>
+    <section class="mt-10 mb-10 bg-white w-full py-6 dark:bg-gray-900 dark:text-white">
+      <div class="container mx-auto ">
+        <ul
+          class="flex flex-col xl:flex-row items-center justify-center gap-0 lg:gap-[150px] md:gap-[0px] "
+        >
+          <li class="textdesign">
+            Pave your path to career success by
+            <br class="xl:block hidden" />gaining a professional Google
+            <br class="xl::block hidden" />certificate with the support of C4U
+          </li>
           <div class="flex items-center gap-5 lg:gap-[110px] mt-10 md:mt-0">
-            <li class="border-r-[2px] "><img class="lg:mr-[100px] mr-0 " src="images/Google.png" alt=""></li>
-            <li class="border-r-[2px] pr-16"><img class="lg:mr-[70px]" src="images/Work & Pensions.png" alt=""></li>
-            <li><img src="images/c4u full logo_2022 1 (1).png" alt=""></li>
+            <li class="border-r-[2px]">
+              <img class="lg:mr-[100px] mr-0" src="images/Google.png" alt="" />
+            </li>
+            <li class="border-r-[2px] pr-16">
+              <img
+                class="lg:mr-[70px] "
+                src="images/Work & Pensions.png"
+                alt=""
+              />
+            </li>
+            <li><img src="images/c4u full logo_2022 1 (1).png" alt="" /></li>
           </div>
         </ul>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- what you will learn section -->
 
-<!-- what you will learn section -->
-
-<section class="grid grid-cols-12 container mx-auto mt-16 mb-10 gap-7 ">
-    <div class="col-span-12 lg:col-span-6 shadow-md rounded-[24px] border bg-white">
+    <section class="grid grid-cols-12 container mx-auto mt-16 mb-10 gap-7">
+      <div
+        class="col-span-12 lg:col-span-6 shadow-md rounded-[24px] border bg-white dark:bg-gray-900 dark:text-white"
+      >
         <h1 class="h1design">What you will learn</h1>
 
         <div>
-            <ul class="flex flex-col my-5">
-                <li class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"><img src="images/Checkmark.png" alt="">Gain skills required to succeed in an entry-level IT job</li>
-                <li class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"><img src="images/Checkmark.png" alt=""> Learn to perform day-to-day IT support tasks including computer assembly, wireless networking, installing programs, and customer service</li>
-                <li class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"><img src="images/Checkmark.png" alt="">Learn how to provide end-to-end customer support, ranging from identifying problems to troubleshooting and debugging</li>
-                <li class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"><img src="images/Checkmark.png" alt="">Learn to use systems including Linux, Domain Name Systems, Command-Line Interface, and Binary Code</li>
-            </ul>
+          <ul class="flex flex-col my-5">
+            <li
+              class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"
+            >
+              <img src="images/Checkmark.png" alt="" />Gain skills required to
+              succeed in an entry-level IT job
+            </li>
+            <li
+              class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"
+            >
+              <img src="images/Checkmark.png" alt="" /> Learn to perform
+              day-to-day IT support tasks including computer assembly, wireless
+              networking, installing programs, and customer service
+            </li>
+            <li
+              class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"
+            >
+              <img src="images/Checkmark.png" alt="" />Learn how to provide
+              end-to-end customer support, ranging from identifying problems to
+              troubleshooting and debugging
+            </li>
+            <li
+              class="flex items-center my-[20px] mx-[30px] gap-4 my-7 font-medium"
+            >
+              <img src="images/Checkmark.png" alt="" />Learn to use systems
+              including Linux, Domain Name Systems, Command-Line Interface, and
+              Binary Code
+            </li>
+          </ul>
         </div>
-    </div>
-    <div class="col-span-12 lg:col-span-6 shadow-md rounded-[24px] border bg-white">
-        <img class="container mx-auto rounded-[24px] bg-transparent" src="images/IT_social 1.png" alt="">
+      </div>
+      <div
+        class="col-span-12 lg:col-span-6 shadow-md rounded-[24px] border bg-white dark:bg-gray-900 dark:text-white"
+      >
+        <img
+          class="container mx-auto rounded-[24px] mix-blend-multiply"
+          src="images/IT_social 1.png"
+          alt=""
+        />
         <h1 class="h1design">Skills you will gain</h1>
 
         <div>
-            <ul class="flex flex-col md:flex-row flex-wrap gap-3 mx-auto p-6 text-center">
-                <li class="listdesign2">Debugging</li>
-                <li class="listdesign2">Customer Service</li>
-                <li class="listdesign2">Customer Support</li>
-                <li class="listdesign2">Domain Name System (DNS)</li>
-                <li class="listdesign2">Network Model</li>
-                <li class="listdesign2">Linux</li>
-                <li class="listdesign2">Encryption Algorithms and Techniques</li>
-                <li class="listdesign2">Network Protocols</li>
-                <li class="listdesign2">Ipv4</li>
-                <li class="listdesign2">Troubleshooting</li>
-                <li class="listdesign2">Binary Code</li>
-                <li class="listdesign2">Cloud Computing</li>
-            </ul>
+          <ul
+            class="flex flex-col md:flex-row flex-wrap gap-3 mx-auto p-6 text-center"
+          >
+            <li class="listdesign2">Debugging</li>
+            <li class="listdesign2">Customer Service</li>
+            <li class="listdesign2">Customer Support</li>
+            <li class="listdesign2">Domain Name System (DNS)</li>
+            <li class="listdesign2">Network Model</li>
+            <li class="listdesign2">Linux</li>
+            <li class="listdesign2">Encryption Algorithms and Techniques</li>
+            <li class="listdesign2">Network Protocols</li>
+            <li class="listdesign2">Ipv4</li>
+            <li class="listdesign2">Troubleshooting</li>
+            <li class="listdesign2">Binary Code</li>
+            <li class="listdesign2">Cloud Computing</li>
+          </ul>
         </div>
-
-    </div>
-</section>
-
-<!-- job assocaited with certificate -->
- <section class="grid grid-cols-12 container gap-7 mx-auto mt-[100px] overflow-x-hidden">
-    <div class="col-span-12 lg:col-span-6 shadow-md rounded-[24px] border bg-white mb-10 ">
-        <h1 class="h1design">Jobs Assocaited with Certificate </h1>
-        <div class="grid grid-cols-12 container mx-auto mb-10 font-semibold text-[11px] md:text-[16px] ">
-            <div class="col-span-6">
-                <ul class="flex flex-col mt-5 ">
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer "><img src="images/Checkmark (1).png" alt="">Database administrator</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">Tech support specialist</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">IT specialist</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">Systems analyst</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">Network engineer</li>
-                </ul>
-            </div>
-
-            <div class="col-span-6">
-                <ul class="flex flex-col mt-5">
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">Network engineer</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">IT support spcialist</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">IT technician</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">Computer user specialist</li>
-                    <li class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"><img src="images/Checkmark (1).png" alt="">IT assitant </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col-span-12 lg:col-span-6 ">
-       <div class=" rounded-[24px] mb-10 scale-y-[1.10] xl:scale-y-[1.02] hover:scale-105 hover:transition-all cursor-pointer scale-x-[1.02] " ><img class="w-full h-[400px] rounded-[24px]" src="images/IT Support 1.png" alt=""></div>
-    </div>
-
- </section>
-
-
- <!-- 5 professional coueses -->
-  <section class="bg-white mb-16">
-    <section class="container mx-auto ">
-       <div class="flex justify-center "> 
-        <div >
-            <h1 class="text-[50px] font-bold p-7 ">There are 5 Courses in this <br class="hidden md:block"> Professional Certificate</h1>
-            
-            <ul class="flex container mx-auto p-6 gap-16 mt-9 flex-wrap">
-                <li class="btnforcourse bg-[#00FF84]">Course 1</li>
-                <li class="btnforcourse">Course 2</li>
-                <li class="btnforcourse">Course 3</li>
-                <li class="btnforcourse">Course 4</li>
-                <li class="btnforcourse">Course 5</li>
-            </ul>
-        </div>
-        <img class="hidden md:block w-[full] h-[full]" src="images/Group 238902.png" alt="">
-        
-    </div>
-
+      </div>
     </section>
-  </section>
 
-  <!-- course1 -->
-
-  <section class="container mx-auto mt-[50px] md:mt-[150px] hover:scale-105 hover:transition-all cursor-pointer">
-    <img class="w-full " src="images/g1.png" alt="">
-  </section>
-
-  <img class="container mx-auto" src="images/Connector Vector (1).png" alt="">
-   <!-- course2 -->
-
-   <section class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer">
-    <img class="w-full " src="images/g2.png" alt="">
-  </section>
-
-  <img class="container mx-auto" src="images/Connector Vector.png" alt="">
-
-  <!-- course3-->
-
-  <section class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer">
-    <img class="w-full " src="images/g3.png" alt="">
-  </section>
-
-  <img class="container mx-auto" src="images/Connector Vector (2).png" alt="">
-
-  <!-- course4-->
-
-  <section class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer">
-    <img class="w-full " src="images/g4.png" alt="">
-  </section>
-
-  <img class="container mx-auto" src="images/Connector Vector (3).png" alt="">
-
-  <!-- course5-->
-
-  <section class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer">
-    <img class="w-full " src="images/g5.png" alt="">
-  </section>
-
-  <!-- footer section -->
-
-  <section>
-    <div class="bg-[url(/images/footer.png)] bg-no-repeat bg-cover w-full h-96 mt-[100px] lg:h-[700px] relative">
-        <div class="lg:m-[120px] m-[20px] bg-white lg:w-[590px] lg:p-12 p-3 rounded-[12px] absolute lg:h-[435px] h-[300px] w-[320px] ">
-        <img src="images/“.png" alt="">
-        <p class="lg:text-[26px] text-[16px] text-[#072125] font-semibold mt-8">I worked in retail and needed to make a change. The certificate is really designed for you to go at your own pace. This is something that anybody can do</p>
-        <p class="lg:text-[18px] text-[14px] text-[#F9CCC7] lg:mt-11 mt-5">Daniel, IT Support Specialist at Central Community College and Google IT Support Certificate graduate</p>
-
-    </div></div>
-
-    <div class="container mx-auto mt-8 flex justify-between gap-5 grid grid-cols-12">
-        <div class="col-span-12 lg:col-span-6">
-            <ul class="flex flex-col gap-1 items-center lg:items-start text-[20px] lg:text-[16px]">
-                <li class="text-[#20484F] font-medium mt-3 "><img src="images/c4u full logo_2022 1.png" alt=""></li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Level39</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">One Canada Square,</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Canary Wharf,</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">London,</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">E14 5AB</li>
+    <!-- job assocaited with certificate -->
+    <section
+      class="grid grid-cols-12 container gap-7 mx-auto mt-[100px] overflow-x-hidden overflow-y-hidden"
+    >
+      <div
+        class="col-span-12 lg:col-span-6 shadow-md rounded-[24px] border bg-white mb-10 dark:bg-gray-900 dark:text-white"
+      >
+        <h1 class="h1design">Jobs Assocaited with Certificate</h1>
+        <div
+          class="grid grid-cols-12 container mx-auto mb-10 font-semibold text-[11px] md:text-[16px]"
+        >
+          <div class="col-span-12 sm:col-span-6">
+            <ul class="flex flex-col mt-1 ">
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />Database
+                administrator
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />Tech support
+                specialist
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />IT specialist
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />Systems analyst
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />Network engineer
+              </li>
             </ul>
-        </div>
+          </div>
 
+          <div class="col-span-12 sm:col-span-6">
+            <ul class="flex flex-col mt-1 
+            " >
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer"
+              >
+                <img src="images/Checkmark (1).png" alt="" />Network engineer
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />IT support
+                spcialist
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />IT technician
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />Computer user
+                specialist
+              </li>
+              <li
+                class="flex gap-3 mt-5 ml-8 hover:scale-105 hover:transition-all cursor-pointer items-center"
+              >
+                <img src="images/Checkmark (1).png" alt="" />IT assitant
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-12 lg:col-span-6">
+       <div class="dark:border dark:rounded-[24px] h-[381px]">
+        <div
+        class="rounded-[24px] mb-10  xl:scale-y-[1.02] hover:transition-all cursor-pointer  z-0 mix-blend-multiply "
+      >
+        <img
+          class="w-full h-[381px] rounded-[24px] "
+          src="images/IT Support 1.png"
+          alt=""
+        />
+      </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- 5 professional coueses -->
+    <section class="bg-white mt-16 mb-16 dark:bg-gray-900 dark:text-white ">
+      <section class="container mx-auto dark:border dark:rounded-[24px]">
+        <div class="flex justify-center">
+          <div>
+            <h1 class="text-[50px] font-bold p-7">
+              There are 5 Courses in this <br class="hidden md:block" />
+              Professional Certificate
+            </h1>
+
+            <ul class="flex container mx-auto p-6 gap-16 mt-9 flex-wrap">
+              <li class="btnforcourse bg-[#00FF84]">Course 1</li>
+              <li class="btnforcourse dark:border-white">Course 2</li>
+              <li class="btnforcourse dark:border-white">Course 3</li>
+              <li class="btnforcourse dark:border-white">Course 4</li>
+              <li class="btnforcourse dark:border-white">Course 5</li>
+            </ul>
+          </div>
+          <img
+            class="hidden md:block w-[full] h-[full]"
+            src="images/Group 238902.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </section>
+
+    <!-- course1 -->
+
+    <section
+      class="container mx-auto mt-[50px] md:mt-[150px] hover:scale-105 hover:transition-all cursor-pointer "
+    >
+      <img class="w-full" src="images/g1.png" alt="" />
+    </section>
+
+    <img
+      class="container mx-auto"
+      src="images/Connector Vector (1).png"
+      alt=""
+    />
+    <!-- course2 -->
+
+    <section
+      class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer"
+    >
+      <img class="w-full" src="images/g2.png" alt="" />
+    </section>
+
+    <img class="container mx-auto" src="images/Connector Vector.png" alt="" />
+
+    <!-- course3-->
+
+    <section
+      class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer"
+    >
+      <img class="w-full" src="images/g3.png" alt="" />
+    </section>
+
+    <img
+      class="container mx-auto"
+      src="images/Connector Vector (2).png"
+      alt=""
+    />
+
+    <!-- course4-->
+
+    <section
+      class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer"
+    >
+      <img class="w-full" src="images/g4.png" alt="" />
+    </section>
+
+    <img
+      class="container mx-auto"
+      src="images/Connector Vector (3).png"
+      alt=""
+    />
+
+    <!-- course5-->
+
+    <section
+      class="container mx-auto hover:scale-105 hover:transition-all cursor-pointer z-0"
+    >
+      <img class="w-full" src="images/g5.png" alt="" />
+    </section>
+
+    <!-- footer section -->
+
+    <section >
+      <div
+        class="bg-[url(/images/footer.png)] bg-no-repeat bg-cover w-full h-96 mt-[100px] lg:h-[700px] relative"
+      >
+        <div
+          class="lg:m-[120px] m-[20px] bg-white lg:w-[590px] lg:p-12 p-3 rounded-[12px] absolute lg:h-[435px] h-[300px] w-[320px] dark:bg-gray-900 "
+        >
+          <img src="images/“.png" alt="" />
+          <p
+            class="lg:text-[26px] text-[16px] text-[#072125] font-semibold mt-8 dark:text-white"
+          >
+            I worked in retail and needed to make a change. The certificate is
+            really designed for you to go at your own pace. This is something
+            that anybody can do
+          </p>
+          <p class="lg:text-[18px] text-[14px] text-[#F9CCC7] lg:mt-11 mt-5">
+            Daniel, IT Support Specialist at Central Community College and
+            Google IT Support Certificate graduate
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto mt-8 flex justify-between gap-5 grid grid-cols-12 "
+      >
+        <div class="col-span-12 lg:col-span-6 ">
+          <ul
+            class="flex flex-col gap-1 items-center lg:items-start text-[20px] lg:text-[16px] "
+          >
+            <li class="text-[#20484F] font-medium mt-3">
+              <img src="images/c4u full logo_2022 1.png" alt="" />
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Level39
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              One Canada Square,
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Canary Wharf,
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              London,
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              E14 5AB
+            </li>
+          </ul>
+        </div>
 
         <div class="flex lg:gap-14 gap-4 sm:gap-16 col-span-12 lg:col-span-6 ">
-            <ul class="flex flex-col gap-1">
-                <li class="text-[#20484F] font-bold mt-3 text-[18px] ">Home</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Collaborations</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Statistics</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">How It Works </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Testimonials </li>
-            </ul>
-            <ul class="flex flex-col gap-1">
-                <li class="text-[#20484F] font-bold mt-3 text-[18px] ">About Us</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Who We Are</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Mission statement </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Our Vision  </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">The  Team  </li>
-            </ul>
-            <ul class="flex flex-col gap-1">
-                <li class="text-[#20484F] font-bold mt-3 text-[18px] ">Upskill</li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">It Support </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Project Managment </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Data Analysts </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Ux Design </li>
-            </ul>
-            <ul class="flex flex-col gap-1">
-                <li class="text-[#20484F] text-[18px] font-bold mt-3 ">Contact Us </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Your message </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Email  </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Phone number  </li>
-                <li class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all">Linkedin  </li>
-            </ul>
-            
-
-        
+          <ul class="flex flex-col gap-1">
+            <li class="text-[#20484F] font-bold mt-3 text-[18px] dark:text-white">Home</li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Collaborations
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white "
+            >
+              Statistics
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              How It Works
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Testimonials
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-1">
+            <li class="text-[#20484F] font-bold mt-3 text-[18px] dark:text-white">About Us</li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Who We Are
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Mission statement
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Our Vision
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              The Team
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-1">
+            <li class="text-[#20484F] font-bold mt-3 text-[18px] dark:text-white">Upskill</li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              It Support
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Project Managment
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Data Analysts
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Ux Design
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-1">
+            <li class="text-[#20484F] text-[18px] font-bold mt-3 dark:text-white">
+              Contact Us
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Your message
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Email
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Phone number
+            </li>
+            <li
+              class="text-[#20484F] font-medium mt-3 hover:scale-105 cursor-pointer transition-all dark:text-white"
+            >
+              Linkedin
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="border-t text-center tex-[14px] text-[#20484F]">
+        <p class="py-3 font-medium dark:text-white">Copyright 2022 Creatives For You LTD</p>
+      </div>
+    </section>
 
-
-    </div>
-    <div class="border-t text-center tex-[14px] text-[#20484F]">
-        <p class="py-3 font-medium">Copyright 2022 Creatives For You LTD</p>
-    </div>
-  </section>
-</body>
+    <script>
+      const htmlTag = document.getElementById("htmlTag");
+      document.getElementById("switch").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>
