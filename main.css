@@ -18,4 +18,11 @@
     .textdesign{
         @apply font-medium text-[23px] lg:text-[28px] lg:font-medium lg:text-center xl:text-[18px] md:text-[16px] border-r-[2px] h-[135px] p-1.5 px-8 lg:p-6 text-center border-r-0 xl:border-r lg:text-left xl:text-left xl:text-justify
     }
+
+    .h1design{
+        @apply font-bold text-[24px] border-b border-b-[#F9CCC7] border-b-[1px] py-6 w-[90%] mx-auto
+    }
+    .listdesign2{
+        @apply border border-[#F44335] rounded-[100px] inline px-3 py-1 font-medium hover:scale-105 hover:transition-all cursor-pointer
+    }
 }
