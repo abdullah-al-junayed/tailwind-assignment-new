@@ -15,5 +15,7 @@
     .listdesign{
         @apply opacity-80 cursor-pointer hover:scale-105 hover:transition
     }
-    
+    .textdesign{
+        @apply font-medium text-[23px] lg:text-[28px] lg:font-medium lg:text-center xl:text-[18px] md:text-[16px] border-r-[2px] h-[135px] p-1.5 px-8 lg:p-6 text-center border-r-0 xl:border-r lg:text-left xl:text-left xl:text-justify
+    }
 }
